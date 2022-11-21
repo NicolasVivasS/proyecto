@@ -234,6 +234,26 @@ h2{
     margin: 5px;
 }
 
+.fotosBlink{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.videosBlink{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
 /* contacto */
 .sugerencias{
     display: flex;
@@ -429,21 +449,11 @@ label{
     }
     
     .fotosBlink{
-        display: flex;
-        flex-direction: column;
-        background-color: antiquewhite;
-        padding: 10px;
-        margin: 5px;
-        width: 200px;
-        height: 150px;
+        width: 250px;
+        height: 200px;
     }
     
     .videosBlink{
-        display: flex;
-        flex-direction: column;
-        background-color: antiquewhite;
-        padding: 10px;
-        margin: 5px;
         width: 250px;
         height: 200px;
     }
