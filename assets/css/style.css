@@ -143,8 +143,9 @@ iframe{
     height: 100%;
 }
 
-.logoHome{
-    width: 80px;
+.logoHome {
+    max-width: 100px;
+    height: auto;
     grid-area: logoHome;
 }
 
@@ -164,6 +165,7 @@ h1 {
     justify-content: center;
     text-align: center;
     font-family: freshman;
+    font-size: 1.5rem;
 }
 
 h2{
@@ -176,6 +178,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     font-family: Robotobold;
+    font-size: 1rem;
 }
 
 /* discografia */
@@ -387,10 +390,10 @@ label{
     }
     
     .titulo{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        grid-area: titulo;
+        display: grid;
+        grid-template-areas: 
+        "logoHome h1";
     }
     
     p{
