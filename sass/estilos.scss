@@ -25,12 +25,14 @@ html{
 }
 
 body{
-    background-color:rgb(175, 245, 221);
+    background-color:#0097A7;
     font-family: Robotolight;
     text-align: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    padding-bottom: 3em;
 }
 
 header{
@@ -64,7 +66,7 @@ ul li {
 }
 
 a{
-    color:#4ED9BF;
+    color:#00BCD4;
     font-style: normal;
     font-family: freshman;
     text-decoration: none;
@@ -80,17 +82,20 @@ a:hover{
 }
 
 main{
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 2px;
+    padding: 1em;
     margin-top: 5px;
-    background-color: white;
+    background-color: #FFFFFF;
     text-decoration: none;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
 }
 
 header{
@@ -99,7 +104,12 @@ header{
 
 .barraNavegacion{
     grid-area: navbar;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+    background-color: #FFFFFF;
 }
 
 .cuerpo{
@@ -175,7 +185,7 @@ h1 {
 h2{
     grid-area: h2;
     color: black;
-    background-color: antiquewhite;
+    background-color: #B2EBF2;
     padding: 10px;
     margin: 10px;
     display: flex;
@@ -226,7 +236,7 @@ h2{
 
 /* galeria */
 .gridFotos{
-    background-color: antiquewhite;
+    background-color: #B2EBF2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;    
@@ -237,7 +247,7 @@ h2{
 }
 
 .gridVideos{
-    background-color: antiquewhite;
+    background-color: #B2EBF2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;    
@@ -250,7 +260,7 @@ h2{
 .fotosBlink{
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: #B2EBF2;
     padding: 10px;
     margin: 5px;
     max-width: 100%;
@@ -260,7 +270,7 @@ h2{
 .videosBlink{
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: #B2EBF2;
     padding: 10px;
     margin: 5px;
     max-width: 100%;
@@ -282,7 +292,7 @@ h2{
 
 
 .formularioContacto{
-    background-color: white;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -293,7 +303,7 @@ h2{
 }
 
 form{
-    background-color: antiquewhite;
+    background-color: #B2EBF2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,48 +311,51 @@ form{
 }
 
 label{
-    background-color: antiquewhite;
+    background-color: #B2EBF2;
     display: flex;
     flex-direction: column;
 }
 
 /* tour */
 .onTour{
-    background-color: antiquewhite;
+    background-color: #B2EBF2;
     padding: 5px;
     border-style: solid;
     margin: 5px;
     width: 85%;
 }
 .tourArgentina{
+    grid-area: tourArg;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 5px;
     margin: 5px;
 }
 
 .tourExtranjero{
+    grid-area: tourExt;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
+    background-color: #FFFFFF;
     align-items: stretch;
     padding: 5px;
     margin: 5px;
 }
 
+
 @media(min-width:600px){
     body{
-        background-color: whitesmoke;
+        background-color: #212121;
     }
     
     main{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color:rgb(175, 245, 221);
+        background-color:#B2EBF2;
         padding: 20px;
         margin-top: 5px;
         font-family: Robotolight;
@@ -377,7 +390,7 @@ label{
     
     .button{
         width: 60px;
-        background-color: antiquewhite;
+        background-color: #607D8B;
         padding: 10px;
         margin: 10px;
         border-radius: 10px;
@@ -387,6 +400,7 @@ label{
     
     
     .relleno{
+        grid-area: relleno;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -409,6 +423,7 @@ label{
     }
 
     .intro{
+        grid-area: intro;
         font-weight: lighter;
         font-size: 20px;
     }
@@ -442,7 +457,7 @@ label{
 
     /* galeria */
     .gridFotos{
-        background-color: white;
+        background-color: #FFFFFF;
         padding: 15px;
         margin: 10px;
         display: grid;
@@ -452,7 +467,7 @@ label{
     }
     
     .gridVideos{
-        background-color: white;
+        background-color: #FFFFFF;
         padding: 15px;
         margin: 10px;
         display: grid;
@@ -473,7 +488,7 @@ label{
     
     /* contacto */
     .sugerencias{
-        background-color: white;
+        background-color: #FFFFFF;
         display: grid;
         grid-template-areas: 
         "h2 h2"
@@ -490,7 +505,7 @@ label{
     }
     
     .formularioContacto{
-        background-color: white;
+        background-color: #FFFFFF;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -499,7 +514,7 @@ label{
     }
     
     .datosContacto{
-        background-color: antiquewhite;
+        background-color: #B2EBF2;
         display: flex;
         flex-direction: column;
     }
@@ -507,11 +522,18 @@ label{
     
     p{
         color: black;
-        background-color: antiquewhite;
+        background-color: #B2EBF2;
         padding: 10px;
         margin: 10px;
         display: flex;
         justify-content:flex-start;
+    }
+
+    .barraNavegacion{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 20px;
     }
 }
 
@@ -541,8 +563,7 @@ label{
     .barraNavegacion{
         display: flex;
         flex-direction: row;
-        background-color: white;
-        padding: 5px;
+        background-color: #FFFFFF;
     }
       
     p{
@@ -561,11 +582,17 @@ label{
 
     /* tour */
     .onTour{
-        background-color: antiquewhite;
+        background-color: #B2EBF2;
         padding: 10px;
         border-style: solid;
         margin: 10px;
         width: 85%;
+    }
+
+    .tours{
+        display: grid;
+        grid-template-areas: 
+        "tourArg tourExt";
     }
     
     /* contacto */
@@ -576,7 +603,7 @@ label{
     
     /*galeria */
     .gridFotos{
-        background-color: white;
+        background-color: #FFFFFF;
         padding: 15px;
         margin: 10px;
         display: grid;
@@ -587,7 +614,7 @@ label{
     }
     
     .gridVideos{
-        background-color: white;
+        background-color: #FFFFFF;
         padding: 15px;
         margin: 5px;
         display: grid;
@@ -598,7 +625,7 @@ label{
     }
     
     .fotosBlink{
-        background-color: antiquewhite;
+        background-color: #B2EBF2;
         padding: 10px;
         margin: 5px;
         width: 300px;
@@ -613,7 +640,7 @@ label{
     
     
     .videosBlink{
-        background-color: antiquewhite;
+        background-color: #B2EBF2;
         padding: 10px;
         margin: 5px;
         width: 300px;
@@ -640,11 +667,19 @@ label{
     
     p{
         color: black;
-        background-color: antiquewhite;
+        background-color: #B2EBF2;
         padding: 10px;
         margin: 10px;
         display: flex;
         justify-content:flex-start;
+    }
+
+    .cuerpo{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "relleno"
+        "intro";
     }
     
 }
