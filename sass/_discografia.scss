@@ -1,0 +1,74 @@
+.gridDiscos{
+    display: grid;
+    grid-template-areas: 
+    "info"
+    "parrafo"
+    "discos";
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    @media(min-width:600px){
+        display: grid;
+        grid-template-areas: 
+        "info    discos"
+        "parrafo discos";
+        justify-items: start;
+    }
+    @media(min-width:1024px){ 
+        display: grid;
+        grid-template-columns: 30% 25% 45%;
+        grid-template-areas: 
+        "discos info parrafo";
+    }
+}
+
+
+.infoDiscos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: stretch;
+    padding: 10px;
+    margin: 5px;
+}
+
+.parrafoDiscos{
+    display: flex;
+    flex-direction: column;
+    grid-area: parrafo;
+    padding: 5px;
+    margin: 5px;
+    @media(min-width:1024px){ 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        grid-area: parrafo;
+        padding: 10px;
+    }
+}
+
+.discosBlink{   
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    height: 300px;
+    width: 300px;
+    grid-area: discos;
+}
+
+@media(min-width:600px){
+    .tituloDisco{
+        display: flex;
+        flex-direction: row;
+        padding: 2px;
+        border: solid 2px;
+        border-color: black;
+        justify-content: center;
+    }
+    .flexDiscos{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+}

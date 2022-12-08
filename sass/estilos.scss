@@ -4,79 +4,16 @@
 
 @import "fuentes";
 
-.cuerpo{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
+@import "index";
 
-.titulo{
-    grid-area: titulo;
-    display: grid;
-    grid-template-areas: 
-    "logoHome"
-    "h1";
-    gap: 5px;
-    justify-items: center;
-}
+@import "discografia";
+
 
 .carouselSlide{
     display: block;
 }
 
-.relleno{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 5px;
-    justify-items: center;
-}
 
-.logoIndex{
-    padding: 5px;
-    margin: 5px;
-    width: 100%;
-}
-
-/* discografia */
-.gridDiscos{
-    display: grid;
-    grid-template-areas: 
-    "info"
-    "parrafo"
-    "discos";
-    align-items: center;
-    justify-items: center;
-    gap: 10px;
-}
-
-.infoDiscos{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    justify-items: stretch;
-    padding: 10px;
-    margin: 5px;
-}
-
-.parrafoDiscos{
-    display: flex;
-    flex-direction: column;
-    grid-area: parrafo;
-    padding: 5px;
-    margin: 5px;
-}
-
-.discosBlink{   
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 5px;
-    height: 300px;
-    width: 300px;
-    grid-area: discos;
-}
 
 /* galeria */
 .gridFotos{
@@ -190,65 +127,8 @@ label{
 }
 
 
-@media(min-width:600px){
-    .button{
-        width: 60px;
-        background-color: #607D8B;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    
-    .relleno{
-        grid-area: relleno;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    
-    .titulo{
-        grid-area: titulo;
-        display: grid;
-        grid-template-areas: 
-        "logoHome h1";
-    }
+@media(min-width:600px){    
 
-    .intro{
-        grid-area: intro;
-        font-weight: lighter;
-        font-size: 20px;
-    }
-      
-    /* discografia */
-    .tituloDisco{
-        display: flex;
-        flex-direction: row;
-        padding: 2px;
-        border: solid 2px;
-        border-color: black;
-        justify-content: center;
-    }
-    
-    .flexDiscos{
-        display: flex;
-        flex-direction: row;
-        background-color: white;
-    }
-    
-    .gridDiscos{
-        display: grid;
-        grid-template-areas: 
-        "info    discos"
-        "parrafo discos";
-        align-items: center;
-        justify-items: start;
-        gap: 10px;
-    }
-    
 
     /* galeria */
     .gridFotos{
@@ -318,17 +198,6 @@ label{
 @media(min-width:1024px){ 
 
 
-    .logoIndex{
-        padding: 5px;
-        margin: 5px;
-        width: 500px;
-    }
-        
-    .intro{
-        font-weight: lighter;
-        font-size: 20px;
-    }
-
     /* tour */
     .onTour{
         background-color: #B2EBF2;
@@ -394,31 +263,6 @@ label{
         margin: 5px;
         width: 300px;
         height: 250px;
-    }
-    
-    /* discografia */
-    .gridDiscos{
-        display: grid;
-        grid-template-columns: 30% 25% 45%;
-        grid-template-areas: 
-        "discos info parrafo";
-    }
-
-    .parrafoDiscos{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        grid-area: parrafo;
-        padding: 10px;
-        margin: 530x;
-    }
-    
-    .cuerpo{
-        display: grid;
-        grid-template-areas: 
-        "titulo"
-        "relleno"
-        "intro";
     }
     
 }
