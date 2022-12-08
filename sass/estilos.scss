@@ -1,116 +1,8 @@
 /* 320px - 599px */
 
-@font-face {
-    font-family: Robotolight;
-    src: url(../fonts/Roboto-Light.ttf)
-}
+@import "generales";
 
-@font-face{
-    font-family: Robotobold;
-    src: url(../fonts/Roboto-Bold.ttf)
-}
-
-@font-face {
-    font-family: freshman;
-    src: url(../fonts/Freshman.ttf);
-}
-
-*{
-    padding: 0%;
-    margin: 0%;
-}
-
-html{
-    font-size: 62,5;
-}
-
-body{
-    background-color:#0097A7;
-    font-family: Robotolight;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 3em;
-}
-
-header{
-    background-image: url(../img/banner.png);
-    background-position: 50%;
-    display: grid;
-    justify-content: center;
-
-}
-
-dl, ol, ul {
-    margin-top: 0;
-    margin-bottom: 0rem;
-}
-
-
-nav ul{
-    width: 100%;
-    display: flex;  
-    flex-direction: row;
-    justify-content: space-between;    
-}
-
-
-ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-
-}
-
-a{
-    color:#00BCD4;
-    font-style: normal;
-    font-family: freshman;
-    text-decoration: none;
-    font-weight: lighter;
-}
-
-ul li:hover{
-    color: black;
-}
-
-a:hover{
-    color: black;
-}
-
-main{
-    background-color: #FFFFFF;
-}
-
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1em;
-    margin-top: 5px;
-    background-color: #FFFFFF;
-    text-decoration: none;
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-}
-
-header{
-    grid-area: header;
-}
-
-.barraNavegacion{
-    grid-area: navbar;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 5px;
-    background-color: #FFFFFF;
-}
+@import "fuentes";
 
 .cuerpo{
     display: flex;
@@ -118,12 +10,6 @@ header{
     justify-items: center;
     align-items: center;
 }
-
-
-footer{
-    grid-area: footer;
-}
-
 
 .titulo{
     grid-area: titulo;
@@ -147,52 +33,10 @@ footer{
     justify-items: center;
 }
 
-img{
-    width: 100%;
-    height: 100%;
-}
-
-iframe{
-    width: 100%;
-    height: 100%;
-}
-
-.logoHome {
-    max-width: 100px;
-    height: auto;
-    grid-area: logoHome;
-}
-
 .logoIndex{
     padding: 5px;
     margin: 5px;
     width: 100%;
-}
-
-h1 {
-    grid-area: h1;
-    color: black;
-    padding: 20px;
-    margin: 10px 10px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font-family: freshman;
-    font-size: 1.5rem;
-}
-
-h2{
-    grid-area: h2;
-    color: black;
-    background-color: #B2EBF2;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: Robotobold;
-    font-size: 1rem;
 }
 
 /* discografia */
@@ -347,47 +191,6 @@ label{
 
 
 @media(min-width:600px){
-    body{
-        background-color: #212121;
-    }
-    
-    main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color:#B2EBF2;
-        padding: 20px;
-        margin-top: 5px;
-        font-family: Robotolight;
-        text-decoration: none;
-    }
-    
-    nav ul{
-        width: 100%;
-        display: flex;  
-        flex-direction: row;
-        justify-content: space-between;    
-    }
-    
-    
-    ul li {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style-type: none;
-    
-    }
-    
-    ol li{
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;  
-        font-style: normal;
-    
-    }
-    
-    
     .button{
         width: 60px;
         background-color: #607D8B;
@@ -412,14 +215,6 @@ label{
         display: grid;
         grid-template-areas: 
         "logoHome h1";
-    }
-    
-    p{
-        color: black;
-        padding: 30px;
-        margin: 30px 10px 30px 10px;
-        text-align: start;
-    
     }
 
     .intro{
@@ -518,62 +313,16 @@ label{
         display: flex;
         flex-direction: column;
     }
-    
-    
-    p{
-        color: black;
-        background-color: #B2EBF2;
-        padding: 10px;
-        margin: 10px;
-        display: flex;
-        justify-content:flex-start;
-    }
-
-    .barraNavegacion{
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px;
-        margin: 20px;
-    }
 }
 
 @media(min-width:1024px){ 
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding: 20px;
-        background-image: url(../img/banner.png);
-        background-position: 50%;
-    }
-    
 
-    .logoHome{
-        width: 100px;
-        padding-right: 15px;
-    }
-    
+
     .logoIndex{
         padding: 5px;
         margin: 5px;
         width: 500px;
     }
-
-
-    .barraNavegacion{
-        display: flex;
-        flex-direction: row;
-        background-color: #FFFFFF;
-    }
-      
-    p{
-        color: black;
-        padding: 30px;
-        margin: 30px 10px 30px 10px;
-        text-align: start;
-    
-    }
-    
         
     .intro{
         font-weight: lighter;
@@ -664,16 +413,6 @@ label{
         margin: 530x;
     }
     
-    
-    p{
-        color: black;
-        background-color: #B2EBF2;
-        padding: 10px;
-        margin: 10px;
-        display: flex;
-        justify-content:flex-start;
-    }
-
     .cuerpo{
         display: grid;
         grid-template-areas: 
