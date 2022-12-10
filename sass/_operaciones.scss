@@ -1,0 +1,5 @@
+@mixin gallery-size ($width, $height){
+    height: $height;
+    width: $width;
+}
+

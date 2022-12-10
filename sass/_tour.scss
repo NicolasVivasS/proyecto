@@ -1,5 +1,5 @@
 .onTour{
-    background-color: #B2EBF2;
+    background-color: $background_color1;
     padding: 5px;
     border-style: solid;
     margin: 5px;
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: $background_color2;
     padding: 5px;
     margin: 5px;
 }
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: $background_color2;
     align-items: stretch;
     padding: 5px;
     margin: 5px;

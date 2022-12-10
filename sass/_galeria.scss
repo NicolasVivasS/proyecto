@@ -1,5 +1,5 @@
 .gridFotos{
-    background-color: #B2EBF2;
+    background-color: $background_color1;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;    
@@ -8,7 +8,7 @@
     padding: 5px;
     margin: 5px;
     @media(min-width:600px){ 
-        background-color: #FFFFFF;
+        background-color: $background_color2;
         padding: 15px;
         margin: 10px;
         display: grid;
@@ -26,7 +26,7 @@
 }
 
 .gridVideos{
-    background-color: #B2EBF2;
+    background-color: $background_color1;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;    
@@ -35,7 +35,7 @@
     padding: 5px;
     margin: 5px;
     @media(min-width:600px){ 
-        background-color: #FFFFFF;
+        background-color: $background_color2;
         padding: 15px;
         margin: 10px;
         display: grid;
@@ -55,20 +55,18 @@
 .fotosBlink{
     display: flex;
     flex-direction: column;
-    background-color: #B2EBF2;
+    background-color: $background_color1;
     padding: 10px;
     margin: 5px;
     max-width: 100%;
     height: auto;
     @media(min-width:600px){  
-        width: 250px;
-        height: 200px;
+        @include gallery-size (250px, 200px);
     }
     @media(min-width:1024px){ 
         padding: 10px;
         margin: 5px;
-        width: 300px;
-        height: 250px;
+        @include gallery-size (300px, 250px);
         transition-property: all;
         transition-duration: 1s;
     }
@@ -81,19 +79,17 @@
 .videosBlink{
     display: flex;
     flex-direction: column;
-    background-color: #B2EBF2;
+    background-color: $background_color1;
     padding: 10px;
     margin: 5px;
     max-width: 100%;
     height: auto;
     @media(min-width:600px){  
-        width: 250px;
-        height: 200px;
+        @include gallery-size(250px, 200px);
     }
     @media(min-width:1024px){ 
         padding: 10px;
         margin: 5px;
-        width: 300px;
-        height: 250px;
+        @include gallery-size(300px, 250px);
     }
 }

@@ -8,12 +8,12 @@ html{
 }
 
 main{
-    background-color: #FFFFFF;
+    background-color: $background_color2;
     @media(min-width:600px){
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color:#B2EBF2;
+        background-color: $background_color1;
         padding: 20px;
         margin-top: 5px;
         font-family: Robotolight;
@@ -22,7 +22,7 @@ main{
 }
 
 body{
-    background-color:#0097A7;
+    background-color: $background_color3;
     font-family: Robotolight;
     text-align: center;
     display: flex;
@@ -31,7 +31,7 @@ body{
     position: relative;
     padding-bottom: 3em;
     @media(min-width:600px){
-        background-color: #212121;
+        background-color: $background_color4;
     }
 }
 
@@ -73,7 +73,7 @@ nav{
     justify-content: space-between;
     padding: 10px;
     margin: 5px;
-    background-color: #FFFFFF;
+    background-color: $background_color2;
         @media(min-width:600px){
             flex-direction: row;
             margin: 20px;
@@ -101,7 +101,7 @@ footer{
     justify-content: center;
     padding: 1em;
     margin-top: 5px;
-    background-color: #FFFFFF;
+    background-color: $background_color2;
     text-decoration: none;
     position: absolute;
     bottom: 0%;
@@ -124,7 +124,7 @@ h1 {
 h2{
     grid-area: h2;
     color: black;
-    background-color: #B2EBF2;
+    background-color: $background_color1;
     padding: 10px;
     margin: 10px;
     display: flex;
@@ -135,7 +135,7 @@ h2{
 }
 
 a{
-    color:#00BCD4;
+    color: $font_color;
     font-style: normal;
     font-family: freshman;
     text-decoration: none;
@@ -144,7 +144,7 @@ a{
 
 p{
     color: black;
-    background-color: #B2EBF2;
+    background-color: $background_color1;
     padding: 10px;
     margin: 10px;
     display: flex;
